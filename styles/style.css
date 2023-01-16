@@ -22,7 +22,7 @@ body{
         font-weight: 500;
         font-size: 24px;
         color: #562EFF;
-        margin: 0px 0px 20px 20px;
+        margin: 15px 0px;
 }
 
 .sub-heading{
@@ -126,8 +126,78 @@ header{
     flex: 1;
 }
 
-.blogs-info .author-name > .post-via{
+.blogs-info .author-name {
     color: #e4e4e4;
+}
+
+/* Latest courses Section Styles */
+.latest-course{
+    background: #FFFFFF;
+    margin: 0px 150px 20px 150px;
+    padding: 35px;
+}
+
+.course-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.courses{
+    background: #ffffff;
+    filter: drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05));
+    padding:10px;
+}
+
+.courses .course-title{
+    color: #1E1E1E;
+}
+
+.courses .course-instructor{
+    color: #ED6B4F;
+    font-size: 14px;
+}
+
+.courses img{
+    width:100%
+}
+
+.course-details{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+.review{
+    display: flex;
+}
+
+.star-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.star-container li:last-child{
+    filter: grayscale(100%);
+}
+
+.review .rating-text{
+    color: #A2A2A2;
+}
+
+.duration-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    background: #FFE4E8;
+    padding: 0px 5px;
+    border-radius: 14.6913px;
+}
+
+.duration-container .duration{
+    text-align: center;
+    color: #FF4A60;
+    font-size: 14px;
 }
 
 /* Responsive Layout Styles */
@@ -179,4 +249,41 @@ header{
     .top-blog-container{
         grid-template-columns: repeat(1, 1fr);
     }
+
+    /* Latest Course Section Styles */
+
+    .latest-course{
+        margin: 20px;
+        padding: 25px;
+    }
+    
+    .course-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .courses .course-instructor{
+        font-size: 20px;
+    }
+    .course-details{
+        gap:5px;
+    }
+
+    .review{
+        gap: 10px;
+    }
+
+    .review .rating-text{
+        font-size: 20px;
+    }
+
+    .star-container,.review-rating{
+        flex: 1;
+    }
+
+    .duration-container{
+        align-items: center;
+    }
+
+    
 }
