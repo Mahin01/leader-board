@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 li{
@@ -11,4 +12,68 @@ li{
 
 a{
     text-decoration: none;
+}
+
+/* Header - Navigation Menu Styles */
+header{
+    background: #562EFF;
+}
+
+.nav{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 150px;
+}
+.nav-brand .nav-title{
+    font-weight: 500;
+    font-size: 24px;
+    color: #FFFFFF;
+    padding: 5px;
+}
+.nav-brand img{
+    width: 10%;
+}
+
+.menu-container{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.menu-container a{
+    text-align: center;
+    display: block;
+    padding: 0px 20px;
+    color: #FFFFFF;
+}
+
+/* Responsive Layout Styles */
+
+/* Responsive Layout - Mobile */
+
+@media screen and (max-width:576px) {
+    .nav{
+        flex-flow: column wrap;
+        text-align: center; 
+        padding: 0;
+    }
+    
+    .nav .nav-brand{
+        margin: 10px 0px; 
+    }
+    
+    .menu-container{
+        flex-flow: column wrap;
+    }
+    
+    .menu-container a { 
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.7); 
+    }
+    
+    .menu-container li:first-child a{
+        border-top: none; 
+    }    
 }
