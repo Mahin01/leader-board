@@ -14,6 +14,10 @@ a{
     text-decoration: none;
 }
 
+body{
+    background: #E5E5E5;
+}
+
 /* Header - Navigation Menu Styles */
 header{
     background: #562EFF;
@@ -48,6 +52,40 @@ header{
     padding: 0px 20px;
     color: #FFFFFF;
 }
+/* Main Area Styles */
+/* Top Player Section Style */
+.top-player{
+    margin: 30px 150px 0px 150px;
+    background: #FFFFFF;
+    padding: 35px;
+}
+
+.top-player-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:20px;
+}
+
+.top-player-heading{
+    font-weight: 500;
+    font-size: 24px;
+    color: #562EFF;
+    margin: 0px 0px 20px 20px;
+}
+
+.players-info{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.players-info .player-img, .player-title{
+    flex: 1;
+}
+
+.players-info img{
+    width: 100%;
+}
 
 /* Responsive Layout Styles */
 
@@ -76,4 +114,17 @@ header{
     .menu-container li:first-child a{
         border-top: none; 
     }    
+
+    /* Main Area Responsive Styles */
+
+    /* Top Player Section Responsive */
+    .top-player{
+        margin: 20px 20px 0px 20px;
+        background: #FFFFFF;
+        padding: 35px;
+    }
+
+    .top-player-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
