@@ -265,11 +265,13 @@ header{
     .courses .course-instructor{
         font-size: 20px;
     }
+
     .course-details{
         gap:5px;
     }
 
     .review{
+        align-items: center;
         gap: 10px;
     }
 
