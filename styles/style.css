@@ -18,6 +18,18 @@ body{
     background: #E5E5E5;
 }
 
+.primary-heading{
+        font-weight: 500;
+        font-size: 24px;
+        color: #562EFF;
+        margin: 0px 0px 20px 20px;
+}
+
+.sub-heading{
+    font-weight: 500px;
+    font-size: 20px;
+}
+
 /* Header - Navigation Menu Styles */
 header{
     background: #562EFF;
@@ -64,13 +76,8 @@ header{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap:20px;
-}
-
-.top-player-heading{
-    font-weight: 500;
-    font-size: 24px;
-    color: #562EFF;
-    margin: 0px 0px 20px 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #D1D1D1;
 }
 
 .players-info{
@@ -85,6 +92,42 @@ header{
 
 .players-info img{
     width: 100%;
+}
+
+.players-info .player-name{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* Top Blogs Section Styles */
+.top-blog{
+    background: #FFFFFF;
+    margin: 0px 150px 30px 150px;
+    padding: 35px;
+}
+
+.top-blog-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.top-blog-container img{
+    width: 100%;
+}
+
+.blogs-item{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.blogs-item > .blog-info, .blog-img{
+    flex: 1;
+}
+
+.blogs-info .author-name > .post-via{
+    color: #e4e4e4;
 }
 
 /* Responsive Layout Styles */
@@ -120,11 +163,20 @@ header{
     /* Top Player Section Responsive */
     .top-player{
         margin: 20px 20px 0px 20px;
-        background: #FFFFFF;
-        padding: 35px;
+        padding: 25px;
     }
 
     .top-player-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Top Blogs Section Responsive */
+    .top-blog{
+        margin: 0px 20px 20px 20px;
+        padding: 25px;
+    }
+
+    .top-blog-container{
         grid-template-columns: repeat(1, 1fr);
     }
 }
